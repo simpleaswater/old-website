@@ -1,0 +1,71 @@
+[
+    {
+        "title": "What is Blockchain Technology?",
+        "imgPath": "https://d3vziz3q6u5wet.cloudfront.net/learn-blockchain/tutorials/what_is_blockchain_technology.png",
+        "alt": "What is Blockchain Technology?",
+        "cardContent": {
+            "title": "What is Blockchain Technology?",
+            "description": "If you're not sure about what blockchain is or how it works, this post uses Wikipedia as a metaphor to explain blockchain technology."
+        },
+        "labels": [
+            "beginner",
+            "cryptography"
+        ],
+        "link": "https://www.coindesk.com/information/what-is-blockchain-technology"
+    },
+    {
+        "title": "Why Blockchain is Hard?",
+        "imgPath": "https://d3vziz3q6u5wet.cloudfront.net/learn-blockchain/tutorials/why_blockchain_is_hard.png",
+        "alt": "Why Blockchain is Hard?",
+        "cardContent": {
+            "title": "Why Blockchain is Hard?",
+            "description": "Jimmy Song goes briefly into what a blockchain is, then devles into what the challenges are when developing on decentralized systems."
+        },
+        "labels": [],
+        "link": "https://medium.com/@jimmysong/why-blockchain-is-hard-60416ea4c5c"
+    },
+    {
+        "title": "The Blockchain Application Stack",
+        "imgPath": "https://d3vziz3q6u5wet.cloudfront.net/learn-blockchain/tutorials/the_blockchain_application_stack.png",
+        "alt": "The Blockchain Application Stack",
+        "cardContent": {
+            "title": "The Blockchain Application Stack",
+            "description": "Joel shares his thoughts on how blockchain will affect the architecture of internet applications in the future and how that would look."
+        },
+        "labels": [],
+        "link": "https://www.coindesk.com/blockchain-application-stack"
+    },
+    {
+        "title": "How Does Ethereum Work, Anyway?",
+        "imgPath": "https://d3vziz3q6u5wet.cloudfront.net/learn-blockchain/tutorials/how_does_ethereum_work.png",
+        "alt": "How Does Ethereum Work, Anyway?",
+        "cardContent": {
+            "title": "How Does Ethereum Work, Anyway?",
+            "description": "Preethi, a Blockchain Engineer, goes into great detail about what Ethereum is. This post covers important Ethereum concepts like gas, proof of work, and more."
+        },
+        "labels": [],
+        "link": "https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369"
+    },
+    {
+        "title": "Why Tokens are Eating the World",
+        "imgPath": "https://d3vziz3q6u5wet.cloudfront.net/learn-blockchain/tutorials/civic.png",
+        "alt": "Why Tokens are Eating the World",
+        "cardContent": {
+            "title": "Why Tokens are Eating the World",
+            "description": "A primer on cryptocurrencies in the context of fiat currencies and how these markets work. An essential read for those who want to better understand tokens!"
+        },
+        "labels": [],
+        "link": "https://vinnylingham.com/why-tokens-are-eating-the-world-b4174235c87b"
+    },
+    {
+        "title": "Building for the Blockchain",
+        "imgPath": "https://d3vziz3q6u5wet.cloudfront.net/learn-blockchain/tutorials/building_for_the_blockchain.png",
+        "alt": "Building for the Blockchain",
+        "cardContent": {
+            "title": "Building for the Blockchain",
+            "description": "Once you understand what blockchain is and how Ethereum works, here's how blockchain is different from existing development paradigms and how to get started."
+        },
+        "labels": [],
+        "link": "https://blog.ycombinator.com/building-for-the-blockchain/"
+    }
+]

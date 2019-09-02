@@ -1,0 +1,80 @@
+[
+    {
+        "title": "IPFS: The Basics",
+        "imgPath": "https://miro.medium.com/max/1920/1*-FYLvsfJxLiRamEGjAWj3A.png",
+        "alt": "IPFS: The Basics",
+        "link": "/ipfs",
+        "cardContent": {
+            "title": "IPFS: The Basics",
+            "description": "Whether you’re just learning how to build peer-to-peer systems with ipfs, want to dive into peer-to-peer concepts and solutions, or are looking for ready-to-use examples, this is the place to start."
+        },
+        "labels": [
+            "free"
+        ]
+    },
+    {
+        "title": "Libp2p: Full Guide",
+        "imgPath": "https://i.pinimg.com/originals/39/a0/7f/39a07ff01316d85abebe323d43bdbbd9.png",
+        "alt": "Libp2p: Full Guide",
+        "link": "/libp2p",
+        "cardContent": {
+            "title": "Libp2p: Full Guide",
+            "description": "Whether you’re just learning how to build peer-to-peer systems with libp2p, want to dive into peer-to-peer concepts and solutions, or are looking for ready-to-use examples, this is the place to start."
+        },
+        "labels": [
+            "free"
+        ]
+    },
+    {
+        "title": "IPLD: Full Guide",
+        "imgPath": "https://i.pinimg.com/originals/f0/34/18/f03418e7db1f5999aa3b91df65e46fe8.png",
+        "alt": "IPLD: Full Guide",
+        "link": "/ipld",
+        "cardContent": {
+            "title": "IPLD: Full Guide",
+            "description": "Whether you’re just learning to use data model of the content-addressable web with libp2p, want to dive into content-addressing concepts , or are looking for ready-to-use ipld examples, this is the place to start."
+        },
+        "labels": [
+            "free"
+        ]
+    },
+    {
+        "title": "IPFS Cluster: Full Guide",
+        "imgPath": "https://i.pinimg.com/originals/aa/45/f7/aa45f766e735aafdf35fb22899fc4d15.png",
+        "alt": "IPFS Cluster: Full Guide",
+        "link": "/ipfs-cluster",
+        "cardContent": {
+            "title": "IPFS Cluster: Full Guide",
+            "description": "Whether you’re just learning to use ipfs for production systems with ipfs-cluster, want to dive into how to manage multiple ipfs nodes, or are looking for ready-to-use ipfs-cluster examples, this is the place to start."
+        },
+        "labels": [
+            "free"
+        ]
+    },
+    {
+        "title": "Multiformat: Full Guide",
+        "imgPath": "https://i.pinimg.com/736x/c0/06/04/c0060434a0c90d3f20afac1126c72943.jpg",
+        "alt": "Multiformat: Full Guide",
+        "link": "/ipld",
+        "cardContent": {
+            "title": "Multiformat: Full Guide",
+            "description": "Whether you’re just learning how to build peer-to-peer systems with libp2p, want to dive into peer-to-peer concepts and solutions, or are looking for ready-to-use examples, this is the place to start."
+        },
+        "labels": [
+            "free"
+        ]
+    },
+    {
+        "title": "Filecoin: Full Guide",
+        "imgPath": "https://i.pinimg.com/originals/5a/6f/a0/5a6fa08b466a7d28761548554f424137.png",
+        "alt": "Filecoin: Full Guide",
+        "link": "/filecoin",
+        "cardContent": {
+            "title": "Filecoin: Full Guide",
+            "description": "Whether you’re just learning how to build future-proof systems with Multiformats, want to dive into future-proofing concepts, or are looking examples for Multiformat protocols, this is the place to start."
+        },
+        "labels": [
+            "free"
+        ]
+    }
+]

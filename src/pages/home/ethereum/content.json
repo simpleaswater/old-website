@@ -1,0 +1,65 @@
+[
+    {
+        "title": "What is Blockchain?",
+        "imgPath": "https://images.unsplash.com/photo-1526378800651-c32d170fe6f8",
+        "alt": "What is Blockchain?",
+        "cardContent": {
+            "title": "What is Blockchain?",
+            "description": "Learn the basics of Blockchain, from cryptography basics to the consensus algorithms.<br /> Why do we need it, how does it work and where to use it?"
+        },
+        "labels": [
+            "beginner",
+            "cryptography"
+        ]
+    },
+    {
+        "title": "Blockchain Tutorials",
+        "imgPath": "https://d3vziz3q6u5wet.cloudfront.net/learn-blockchain/tutorials/how_does_blockchain_really_work.png",
+        "alt": "Blockchain Tutorials",
+        "cardContent": {
+            "title": "Blockchain Tutorials",
+            "description": "These tutorials introduce what blockchain is, how to create a blockchain from scratch, and code examples to help you get started with blockchain programming."
+        },
+        "labels": []
+    },
+    {
+        "title": "Blockchain Frameworks, Libraries & more",
+        "imgPath": "https://i.pinimg.com/originals/5d/42/16/5d42160b856804fd5996f20ba9f42b81.png",
+        "alt": "Blockchain Frameworks, Libraries & more",
+        "cardContent": {
+            "title": "Frameworks & Libraries",
+            "description": "A collection of various blockchain development tools that you may encounter, including blockchain frameworks, libraries, clients, and more."
+        },
+        "labels": []
+    },
+    {
+        "title": "Web3 Platforms",
+        "imgPath": "https://i.pinimg.com/736x/4b/bc/69/4bbc69e367a8cccaa386219a92d92d24.jpg",
+        "alt": "Web3 Platforms",
+        "cardContent": {
+            "title": "Web 3.0 Platforms",
+            "description": "Here are Web3 services, applications, and projects that you may find helpful when building your own decentralized application."
+        },
+        "labels": []
+    },
+    {
+        "title": "Web 3.0 Video Tutorials",
+        "imgPath": "https://images.unsplash.com/photo-1533590929899-fc2f1a8c5168",
+        "alt": "Web 3.0 Video Tutorials",
+        "cardContent": {
+            "title": "Web 3.0 Video Tutorials",
+            "description": "These videos cover introductory topics on Web 3.0 concepts, how to build a blockchain, how to build your own DApp, and more."
+        },
+        "labels": []
+    },
+    {
+        "title": "Web 3.0 Podcasts",
+        "imgPath": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618",
+        "alt": "Web 3.0 Podcasts",
+        "cardContent": {
+            "title": "Web 3.0 Podcasts",
+            "description": "Stay up-to-date on the latest insights and opinions from the Web 3.0 experts within the Web 3.0 world with these blockchain podcasts."
+        },
+        "labels": []
+    }
+]

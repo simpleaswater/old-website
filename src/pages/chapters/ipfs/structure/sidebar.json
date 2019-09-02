@@ -1,0 +1,30 @@
+{
+    "overview": {
+        "link": "/ipfs/overview"
+    },
+    "concepts": [
+        {
+            "text": "What is IPFS?",
+            "link": "/ipfs/concepts/what_is_ipfs"
+        }
+    ],
+    "tutorials": [
+        {
+            "text": "Getting Started",
+            "link": "/ipfs/tutorials/getting_started"
+        },
+        {
+            "text": "Uploading to IPFS",
+            "link": "/ipfs/tutorials/uploading_to_ipfs"
+        }
+    ],
+    "starter_kits": [
+        {
+            "text": "Upload Widget",
+            "link": "/ipfs/starter_kits/upload_widget"
+        }
+    ],
+    "app_store": {
+        "link": "/ipfs/app_store"
+    }
+}

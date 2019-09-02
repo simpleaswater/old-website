@@ -1,0 +1,32 @@
+.paper {
+    &:hover {
+        box-shadow: 4px 4px 15px 0 rgba(36, 37, 38, .2);
+    }
+
+    .card_title {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .paperButton {
+        color: #fff !important;
+        text-transform: capitalize !important;
+        border-color: #fff !important;
+        border-radius: 100px !important;
+        font-size: 16px !important;
+        letter-spacing: 1px;
+        background: rgba(255, 255, 255, .2) !important;
+
+        &:hover {
+            color: #000 !important;
+            background: rgba(255, 255, 255, 1) !important;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, .2);
+        }
+    }
+}
+
+.grid {
+    .main {
+        margin-top: 40px;
+    }
+}
