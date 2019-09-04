@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom'
 // import { createStore, applyMiddleware, compose } from 'redux'
 // import reducers from 'redux/reducers'
 import { createBrowserHistory } from 'history'
+import { ThemeProvider } from '@material-ui/styles'
+import { createMuiTheme } from '@material-ui/core/styles'
 import MainRouter from './routes'
 import * as serviceWorker from './serviceWorker'
 
@@ -26,8 +28,25 @@ window.store = store */
     document.getElementById('root'),
 ) */
 
+const THEME = createMuiTheme({
+    typography: {
+        "fontFamily": "\"Hind\", \"sans-serif\"",
+        /* "fontSize": 16, */
+        "fontWeightLight": 300,
+        "fontWeightRegular": 400,
+        "fontWeightMedium": 500
+    },
+    palette: {
+        secondary: {
+            main: '#7A67EE'
+        }
+    }
+});
+
 ReactDOM.render(
-    <MainRouter history={history} />,
+    <ThemeProvider theme={THEME}>
+        <MainRouter history={history} />
+    </ThemeProvider>,
     document.getElementById('root'),
 )
 

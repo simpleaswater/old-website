@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import BlankLayout from '../layouts/BlankLayout'
-import MainLayout from '../layouts/MainLayout'
-import Dashboard from './Dashboard/Dashboard'
+import BlankLayout from './BlankLayout'
+import MainLayout from './MainLayout'
+import Dashboard from './Dashboard'
 
 
 export default class index extends Component {

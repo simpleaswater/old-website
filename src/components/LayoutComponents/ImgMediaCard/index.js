@@ -7,7 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import Chip from '@material-ui/core/Chip';
-import Avatar from '@material-ui/core/Avatar'
 
 import AddLink from '../Link'
 
@@ -25,14 +24,14 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: '#ECE2F7'
     },
     cardAction: {
-        minHeight: '168px'
+        minHeight: '120px'
     }
 }))
 
 
 export default function ImgMediaCard(props) {
 
-    const { title, imgPath, alt, cardContent, favoriteIcon, shareIcon, link, labels } = props
+    const { title, imgPath, alt, cardContent, favoriteIcon, shareIcon, link, labels, toggleHeart, toggleDrawer } = props
 
     const classes = useStyles();
 
@@ -62,10 +61,10 @@ export default function ImgMediaCard(props) {
                 </CardActionArea>
             </AddLink>
             <CardActions disableSpacing>
-                <IconButton aria-label="add to favorites">
+                <IconButton aria-label="add to favorites" onClick={toggleHeart}>
                     {favoriteIcon}
                 </IconButton>
-                <IconButton aria-label="share">
+                <IconButton aria-label="share" onClick={toggleDrawer}>
                     {shareIcon}
                 </IconButton>
                 <div className={classes.labels}>

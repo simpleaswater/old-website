@@ -13,7 +13,7 @@ export default function LinearIndeterminate() {
 
     return (
         <div className={classes.root}>
-            <LinearProgress color="primary"/>
+            <LinearProgress color="primary" />
         </div>
     );
 }

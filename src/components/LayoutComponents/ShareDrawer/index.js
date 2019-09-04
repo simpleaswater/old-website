@@ -42,6 +42,7 @@ export default function ShareDrawer(props) {
         setState({ ...state, [side]: open });
     };
 
+    
     const fullList = side => (
         <div
             className={classes.fullList}

@@ -59,7 +59,7 @@ export default function Main() {
         >
             <List>
                 {['Twitter', 'LinkedIn', 'Facebook', 'Email'].map((text, index) => (
-                    <ListItem button key={text}>
+                    <ListItem button key={index}>
                         <ListItemIcon>{
                             iconList[text]
                         }</ListItemIcon>
@@ -102,7 +102,7 @@ export default function Main() {
 
     const getRow = (rowIndex, data) => {
         return (
-            <Grid container justify="center" style={{ margin: 'auto' }} spacing={2} >
+            <Grid key={rowIndex} container justify="center" style={{ margin: 'auto' }} spacing={2} >
                 {
                     data.map((cardData, cardIndex) => {
                         return getCard(cardIndex, rowIndex, cardData)
@@ -116,6 +116,7 @@ export default function Main() {
         return (
             <Grid key={rowIndex} item>
                 <ImgMediaCard
+                    key={`${rowIndex}${cardIndex}`}
                     title={data.title}
                     imgPath={data.imgPath}
                     alt={data.alt}
@@ -134,12 +135,14 @@ export default function Main() {
                                 dangerouslySetInnerHTML={{ __html: data.cardContent.description }} />
                         </Fragment>
                     }
+                    toggleHeart={() => toggleHeart(`${rowIndex}${cardIndex}`)}
+                    toggleDrawer={() => toggleDrawer('bottom', true)}
                     favoriteIcon={
                         state.heartClicked[`${rowIndex}${cardIndex}`] ?
-                            <FavoriteIcon color="secondary" onClick={() => toggleHeart(`${rowIndex}${cardIndex}`)} />
+                            <FavoriteIcon color="secondary" />
                             :
-                            <FavoriteOutlinedIcon onClick={() => toggleHeart(`${rowIndex}${cardIndex}`)} />}
-                    shareIcon={<ShareIcon onClick={toggleDrawer('bottom', true)} />}
+                            <FavoriteOutlinedIcon />}
+                    shareIcon={<ShareIcon />}
                     labels={data.labels}
                 />
             </Grid>

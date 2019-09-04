@@ -2,10 +2,64 @@
     "overview": {
         "link": "/ipfs/overview"
     },
-    "concepts": [
+    "introductions": [
         {
             "text": "What is IPFS?",
-            "link": "/ipfs/concepts/what_is_ipfs"
+            "link": "/ipfs/introduction/what_is_ipfs"
+        },
+        {
+            "text": "How IPFS Works?",
+            "link": "/ipfs/introduction/how_ipfs_works"
+        },
+        {
+            "text": "Getting Started",
+            "link": "/ipfs/introduction/getting_started"
+        },
+        {
+            "text": "FAQ",
+            "link": "/ipfs/introduction/faq"
+        }
+    ],
+    "concepts": [
+        {
+            "text": "Content Identifiers (CIDs)",
+            "link": "/ipfs/concepts/cid"
+        },
+        {
+            "text": "DNSLink",
+            "link": "/ipfs/concepts/dnslink"
+        },
+        {
+            "text": "Hashes",
+            "link": "/ipfs/concepts/hashes"
+        },
+        {
+            "text": "IPNS",
+            "link": "/ipfs/concepts/ipns"
+        },
+        {
+            "text": "Merkle-DAGs",
+            "link": "/ipfs/concepts/merkle-dag"
+        },
+        {
+            "text": "Mutable File System (MFS)",
+            "link": "/ipfs/concepts/mfs"
+        },
+        {
+            "text": "DHT",
+            "link": "/ipfs/concepts/dht"
+        },
+        {
+            "text": "Bitswap",
+            "link": "/ipfs/concepts/bitswap"
+        },
+        {
+            "text": "Pinning",
+            "link": "/ipfs/concepts/pinning"
+        },
+        {
+            "text": "UnixFS",
+            "link": "/ipfs/concepts/unixfs"
         }
     ],
     "tutorials": [

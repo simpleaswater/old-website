@@ -25,7 +25,7 @@ export default function Link(props) {
         return props.children
     }
     else if (link.substr(0, 1) == "/") {
-        return <NavLink target="_blank" to={link} className={classes.link} >{children}</NavLink>
+        return <NavLink to={link} className={classes.link} onClick={() => { this.forceUpdate() }}>{children}</NavLink>
     }
     else {
         return <a target="_blank" href={link} className={classes.link} >{children}</a>

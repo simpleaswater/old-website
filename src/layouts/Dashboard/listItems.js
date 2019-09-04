@@ -32,12 +32,16 @@ const useStyles = makeStyles(theme => ({
   link: {
     textDecoration: 'none',
     color: '#000000de'
+  },
+  listItemIcon: {
+    maxWidth: '36px'
   }
 }));
 
 export default function NestedList(props) {
   const classes = useStyles();
   const [menuState, ToggleMenu] = React.useState({
+    'introductions': false,
     'concepts': false,
     'tutorials': false,
     'starterkits': false,
@@ -52,10 +56,25 @@ export default function NestedList(props) {
 
   const { match, location, sidebar } = props
 
-  const getConceptsList = () => {
-    return sidebar.concepts.map(concept => {
+  const getIntroductionsList = () => {
+    return sidebar.introductions.map((intro, index) => {
       return (
-        <NavLink to={concept.link} className={classes.link}>
+        <NavLink key={index} to={intro.link} className={classes.link}>
+          <ListItem button className={classes.nested}>
+            <ListItemIcon className={classes.listItemIcon}>
+              <QuestionIcon />
+            </ListItemIcon>
+            <ListItemText secondary={intro.text} />
+          </ListItem>
+        </NavLink>
+      )
+    })
+  }
+
+  const getConceptsList = () => {
+    return sidebar.concepts.map((concept, index) => {
+      return (
+        <NavLink key={index} to={concept.link} className={classes.link}>
           <ListItem button className={classes.nested}>
             <ListItemIcon>
               <QuestionIcon />
@@ -68,9 +87,9 @@ export default function NestedList(props) {
   }
 
   const getTutorialsList = () => {
-    return sidebar.tutorials.map(tutorial => {
+    return sidebar.tutorials.map((tutorial, index) => {
       return (
-        <NavLink className={classes.link} to={tutorial.link}>
+        <NavLink key={index} className={classes.link} to={tutorial.link}>
           <ListItem button className={classes.nested}>
             <ListItemIcon>
               <StepIcon />
@@ -83,9 +102,9 @@ export default function NestedList(props) {
   }
 
   const getKitsList = () => {
-    return sidebar.starter_kits.map(kit => {
+    return sidebar.starter_kits.map((kit, index) => {
       return (
-        <NavLink to={kit.link} className={classes.link}>
+        <NavLink key={index} to={kit.link} className={classes.link}>
           <ListItem button className={classes.nested}>
             <ListItemIcon>
               <KitIcon />
@@ -117,6 +136,19 @@ export default function NestedList(props) {
           <ListItemText primary="Overview" />
         </ListItem>
       </NavLink>
+
+      <ListItem button onClick={() => handleClick('introductions')}>
+        <ListItemIcon>
+          <ConceptIcon />
+        </ListItemIcon>
+        <ListItemText primary="Introduction" />
+        {menuState.introductions ? <ExpandLess /> : <ExpandMore />}
+      </ListItem>
+      <Collapse in={menuState.introductions} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          {getIntroductionsList()}
+        </List>
+      </Collapse>
 
       <ListItem button onClick={() => handleClick('concepts')}>
         <ListItemIcon>

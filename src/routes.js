@@ -31,9 +31,24 @@ const routes = [
         exact: true,
     },
     {
+        path: '/:project/:section/:topic/:subtopic',
+        component: loadable(() => import('./pages/chapters')),
+        exact: true,
+    },
+    {
+        path: '/:project/:section/:topic',
+        component: loadable(() => import('./pages/chapters')),
+        exact: true,
+    },
+    {
+        path: '/:project/:section',
+        component: loadable(() => import('./pages/chapters')),
+        exact: true,
+    },
+    {
         path: '/:project',
         component: loadable(() => import('./pages/chapters')),
-        exact: false,
+        exact: true,
     },
 ]
 
