@@ -28,7 +28,7 @@ const generateKey = async (name, options) => {
     return newKey
 }
 
-module.exports = {
+export default {
     addToIPFS,
     getKeyList,
     generateKey

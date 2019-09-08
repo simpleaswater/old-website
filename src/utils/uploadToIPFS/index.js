@@ -7,4 +7,4 @@ const uploadToIPFS = async file => {
     console.log(result)
 }
 
-module.exports = uploadToIPFS
+export default uploadToIPFS
