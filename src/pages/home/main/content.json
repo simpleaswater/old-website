@@ -9,7 +9,8 @@
             "description": "Whether you’re just learning how to build peer-to-peer systems with ipfs, want to dive into peer-to-peer concepts and solutions, or are looking for ready-to-use examples, this is the place to start."
         },
         "labels": [
-            "free"
+            "free",
+            "ipfs"
         ]
     },
     {
@@ -22,7 +23,9 @@
             "description": "Whether you’re just learning how to build peer-to-peer systems with libp2p, want to dive into peer-to-peer concepts and solutions, or are looking for ready-to-use examples, this is the place to start."
         },
         "labels": [
-            "free"
+            "libp2p",
+            "dht",
+            "bitswap"
         ]
     },
     {
@@ -32,10 +35,12 @@
         "link": "/ipld",
         "cardContent": {
             "title": "IPLD: Full Guide",
-            "description": "Whether you’re just learning to use data model of the content-addressable web with libp2p, want to dive into content-addressing concepts , or are looking for ready-to-use ipld examples, this is the place to start."
+            "description": "Whether you’re just learning to use data model of the content-addressable web with IPLD, want to dive into DAG concepts , or are looking for ready-to-use IPLD examples, this is the place to start."
         },
         "labels": [
-            "free"
+            "ipld",
+            "dag",
+            "merkle-dag"
         ]
     },
     {
@@ -45,10 +50,11 @@
         "link": "/ipfs-cluster",
         "cardContent": {
             "title": "IPFS Cluster: Full Guide",
-            "description": "Whether you’re just learning to use ipfs for production systems with ipfs-cluster, want to dive into how to manage multiple ipfs nodes, or are looking for ready-to-use ipfs-cluster examples, this is the place to start."
+            "description": "Whether you’re just looking to use IPFS for production systems, want to dive into how to manage multiple ipfs nodes, or are looking for ready-to-use examples, this is the place to start."
         },
         "labels": [
-            "free"
+            "ipfs-cluster",
+            "datasets"
         ]
     },
     {
@@ -61,7 +67,8 @@
             "description": "Whether you’re just learning how to build peer-to-peer systems with libp2p, want to dive into peer-to-peer concepts and solutions, or are looking for ready-to-use examples, this is the place to start."
         },
         "labels": [
-            "free"
+            "multiformat",
+            "multibase"
         ]
     },
     {
@@ -74,7 +81,7 @@
             "description": "Whether you’re just learning how to build future-proof systems with Multiformats, want to dive into future-proofing concepts, or are looking examples for Multiformat protocols, this is the place to start."
         },
         "labels": [
-            "free"
+            "filecoin"
         ]
     }
 ]

@@ -37,7 +37,7 @@ export default function Test() {
                 </Grid>
 
                 <Grid key={2} xs={12} item style={{ marginTop: '40px' }}>
-                    <Subscribe placeholderText="Get more free courses" />
+                    <Subscribe placeholderText="Get free access to all courses" />
                 </Grid>
 
                 {/*                 <Grid key={2} item style={{ marginTop: '80px', paddingLeft: '10%', paddingRight: '10%' }}>

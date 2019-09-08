@@ -21,6 +21,7 @@ export default function Link(props) {
     //console.log(props)
     const { link, children } = props
     const classes = useStyles();
+
     if (!link) {
         return props.children
     }

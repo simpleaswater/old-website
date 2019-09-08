@@ -4,46 +4,42 @@
     },
     "introductions": [
         {
-            "text": "What is IPFS?",
-            "link": "/ipfs/introduction/what_is_ipfs"
-        },
-        {
-            "text": "How IPFS Works?",
-            "link": "/ipfs/introduction/how_ipfs_works"
-        },
-        {
-            "text": "Getting Started",
-            "link": "/ipfs/introduction/getting_started"
-        },
-        {
-            "text": "FAQ",
-            "link": "/ipfs/introduction/faq"
+            "text": "Why IPFS?",
+            "link": "/ipfs/introduction/why_ipfs"
         }
     ],
     "concepts": [
         {
-            "text": "Content Identifiers (CIDs)",
-            "link": "/ipfs/concepts/cid"
-        },
-        {
-            "text": "DNSLink",
-            "link": "/ipfs/concepts/dnslink"
-        },
-        {
             "text": "Hashes",
             "link": "/ipfs/concepts/hashes"
+        },
+        {
+            "text": "Content Addressing",
+            "link": "/ipfs/concepts/cid"
         },
         {
             "text": "IPNS",
             "link": "/ipfs/concepts/ipns"
         },
         {
+            "text": "Pinning",
+            "link": "/ipfs/concepts/pinning"
+        },
+        {
+            "text": "IPLD",
+            "link": "/ipfs/concepts/ipld"
+        },
+        {
+            "text": "DAGs",
+            "link": "/ipfs/concepts/dag"
+        },
+        {
             "text": "Merkle-DAGs",
             "link": "/ipfs/concepts/merkle-dag"
         },
         {
-            "text": "Mutable File System (MFS)",
-            "link": "/ipfs/concepts/mfs"
+            "text": "Libp2p",
+            "link": "/ipfs/concepts/libp2p"
         },
         {
             "text": "DHT",
@@ -54,31 +50,55 @@
             "link": "/ipfs/concepts/bitswap"
         },
         {
-            "text": "Pinning",
-            "link": "/ipfs/concepts/pinning"
+            "text": "Mutable File System (MFS)",
+            "link": "/ipfs/concepts/mfs"
         },
         {
             "text": "UnixFS",
             "link": "/ipfs/concepts/unixfs"
+        },
+        {
+            "text": "DNSLink",
+            "link": "/ipfs/concepts/dnslink"
+        }
+    ],
+    "getting_started": [
+        {
+            "text": "Install IPFS",
+            "link": "/ipfs/getting_started/install"
+        },
+        {
+            "text": "Using IPFS",
+            "link": "/ipfs/getting_started/using_ipfs"
+        },
+        {
+            "text": "Transferring Files",
+            "link": "/ipfs/getting_started/transfer_files"
+        },
+        {
+            "text": "Replicate Datasets",
+            "link": "/ipfs/getting_started/replicate_large_dataset"
         }
     ],
     "tutorials": [
         {
-            "text": "Getting Started",
-            "link": "/ipfs/tutorials/getting_started"
+            "text": "Website on IPFS",
+            "link": "/ipfs/tutorials/hosting_website_on_ipfs_ipns_dnslink"
         },
         {
-            "text": "Uploading to IPFS",
-            "link": "/ipfs/tutorials/uploading_to_ipfs"
-        }
-    ],
-    "starter_kits": [
+            "text": "Youtube on IPFS",
+            "link": "/ipfs/tutorials/youtube_on_ipfs"
+        },
         {
-            "text": "Upload Widget",
-            "link": "/ipfs/starter_kits/upload_widget"
+            "text": "Online Publication on IPLD",
+            "link": "/ipfs/tutorials/online_publishing_using_ipld"
+        },
+        {
+            "text": "Chat App on Libp2p",
+            "link": "/ipfs/tutorials/chat_app_libp2p"
         }
     ],
     "app_store": {
-        "link": "/ipfs/app_store"
+        "link": "https://awesome.ipfs.io/apps/"
     }
 }

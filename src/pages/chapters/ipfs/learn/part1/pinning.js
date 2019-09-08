@@ -8,11 +8,11 @@ import IconButton from '@material-ui/core/IconButton'
 import CloudUploadIcon from '@material-ui/icons/CloudUpload'
 import { NavLink } from 'react-router-dom'
 
-import uploadToIPFS from '../../../../utils/uploadToIPFS'
+import uploadToIPFS from '../../../../../utils/uploadToIPFS'
 import { Buffer } from 'multihashing-async';
 
-import UnPinnedImg from '../../../../assets/pinning01.png'
-import PinnedImg from '../../../../assets/pinning02.png'
+import UnPinnedImg from '../../../../../assets/pinning01.png'
+import PinnedImg from '../../../../../assets/pinning02.png'
 
 const sha1 = require('js-sha1');
 const sha256 = require('js-sha256');
@@ -82,7 +82,7 @@ export default function Pinning() {
 
             <Grid key={0} xs={12} item>
                 <Typography variant="body1">
-                    In the <NavLink className={classes.link} to="/ipfs/concepts/cid">content addressing</NavLink> section, we learned that different IPFS peers store the data(for example, wiki web pages) that they can share with other IPFS peers too.
+                    In the <NavLink className={classes.link} to="/ipfs/learn/cid">content addressing</NavLink> section, we learned that different IPFS peers store the data(for example, wiki web pages) that they can share with other IPFS peers too.
                 </Typography>
             </Grid>
 
@@ -176,18 +176,7 @@ export default function Pinning() {
                 </ul>
             </Grid>
 
-            <Grid key={0} xs={12} justify="center" align="center" item>
-                <NavLink className={classes.link} to="/ipfs/concepts/ipns">
-                    <Button variant="contained" color="primary" className={classes.button}>
-                        Previous
-                </Button>
-                </NavLink>
-                <NavLink className={classes.link} to="/ipfs/concepts/ipld">
-                    <Button variant="contained" color="primary" className={classes.button}>
-                        Next
-                </Button>
-                </NavLink>
-            </Grid>
+
         </Grid>
     )
 }

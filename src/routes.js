@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom'
-//import { ConnectedRouter } from 'connected-react-router'
 import Loadable from 'react-loadable'
 
+import ScrollToTop from './components/LayoutComponents/ScrollToTop'
 import Loader from './components/LayoutComponents/Loader'
 import IndexLayout from './layouts'
 
@@ -57,20 +57,22 @@ class MainRouter extends React.Component {
         const { history } = this.props
         return (
             <Router history={history}>
-                <IndexLayout>
-                    <Switch>
-                        {/* <Route exact path="/" render={() => <Redirect to="/home" />} /> */}
-                        {routes.map(route => (
-                            <Route
-                                path={route.path}
-                                component={route.component}
-                                key={route.path}
-                                exact={route.exact}
-                            />
-                        ))}
-                        {/* <Route exact path="/" render={() => <Redirect to="/survey" />} /> */}
-                    </Switch>
-                </IndexLayout>
+                <ScrollToTop>
+                    <IndexLayout>
+                        <Switch>
+                            {/* <Route exact path="/" render={() => <Redirect to="/home" />} /> */}
+                            {routes.map(route => (
+                                <Route
+                                    path={route.path}
+                                    component={route.component}
+                                    key={route.path}
+                                    exact={route.exact}
+                                />
+                            ))}
+                            {/* <Route exact path="/" render={() => <Redirect to="/survey" />} /> */}
+                        </Switch>
+                    </IndexLayout>
+                </ScrollToTop>
             </Router>
         )
     }

@@ -9,9 +9,11 @@ const useStyles = makeStyles({
         backgroundColor: '#F2F3F4',
         fontSize: '0.875rem',
         fontFamily: "\"Roboto Mono\", \"monospace\"",
+        textDecoration: 'none',
     },
     link: {
-        color: "#0000EE"
+        color: "#0000EE",
+        textDecoration: 'none'
     },
     note: {
         borderLeft: "6px solid #3f51b5",
@@ -47,7 +49,7 @@ export default function Mfs() {
                 </Typography>
             </Grid>
 
-            <Grid key={0} xs={12} item>
+            <Grid key={0} xs={12} align="center" item>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/FX_AXNDsZ9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </Grid>
         </Grid>

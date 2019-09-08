@@ -44,7 +44,7 @@ export default function NestedList(props) {
     'introductions': false,
     'concepts': false,
     'tutorials': false,
-    'starterkits': false,
+    'getting_started': false,
     'apps': false
   });
 
@@ -101,8 +101,8 @@ export default function NestedList(props) {
     })
   }
 
-  const getKitsList = () => {
-    return sidebar.starter_kits.map((kit, index) => {
+  const getGettingStartedList = () => {
+    return sidebar.getting_started.map((kit, index) => {
       return (
         <NavLink key={index} to={kit.link} className={classes.link}>
           <ListItem button className={classes.nested}>
@@ -163,6 +163,19 @@ export default function NestedList(props) {
         </List>
       </Collapse>
 
+      <ListItem button onClick={() => handleClick('getting_started')}>
+        <ListItemIcon>
+          <StarterKitIcon />
+        </ListItemIcon>
+        <ListItemText primary="Getting Started" />
+        {menuState.getting_started ? <ExpandLess /> : <ExpandMore />}
+      </ListItem>
+      <Collapse in={menuState.getting_started} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          {getGettingStartedList()}
+        </List>
+      </Collapse>
+
       <ListItem button onClick={() => handleClick('tutorials')}>
         <ListItemIcon>
           <TutorialIcon />
@@ -176,28 +189,14 @@ export default function NestedList(props) {
         </List>
       </Collapse>
 
-
-      <ListItem button onClick={() => handleClick('starterkits')}>
-        <ListItemIcon>
-          <StarterKitIcon />
-        </ListItemIcon>
-        <ListItemText primary="Starter Kits" />
-        {menuState.starterkits ? <ExpandLess /> : <ExpandMore />}
-      </ListItem>
-      <Collapse in={menuState.starterkits} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          {getKitsList()}
-        </List>
-      </Collapse>
-
-      <NavLink to={sidebar.app_store.link} className={classes.link}>
+      <a target="_blank" href={sidebar.app_store.link} className={classes.link}>
         <ListItem button>
           <ListItemIcon>
             <AppsIcon />
           </ListItemIcon>
           <ListItemText primary="App Store" />
         </ListItem>
-      </NavLink>
+      </a>
     </List>
   );
 }

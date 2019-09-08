@@ -10,6 +10,11 @@ import Mfs from './mfs'
 import Pinning from './pinning'
 import Unixfs from './unixfs'
 
+import Ipld from './ipld'
+import Dag from './dag'
+
+import Libp2p from './libp2p'
+
 export default function Concepts(props) {
 
     const { match } = props
@@ -24,7 +29,10 @@ export default function Concepts(props) {
         "merkle-dag": <MerkleDag {...props} />,
         "mfs": <Mfs {...props} />,
         "pinning": <Pinning />,
-        "unixfs": <Unixfs {...props} />
+        "unixfs": <Unixfs {...props} />,
+        "ipld": <Ipld {...props} />,
+        "dag": <Dag {...props} />,
+        "libp2p": <Libp2p {...props} />,
     }
 
     return topics[match.params.topic]

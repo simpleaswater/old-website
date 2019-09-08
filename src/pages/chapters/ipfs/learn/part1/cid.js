@@ -8,11 +8,11 @@ import IconButton from '@material-ui/core/IconButton'
 import CloudUploadIcon from '@material-ui/icons/CloudUpload'
 import { NavLink } from 'react-router-dom'
 
-import ipfs from '../../../../utils/ipfs'
+import uploadToIPFS from '../../../../../utils/uploadToIPFS'
 import { Buffer } from 'multihashing-async';
 
-import LocationAddressingImg from '../../../../assets/cid01.png'
-import ContentAddressingImg from '../../../../assets/cid02.png'
+import LocationAddressingImg from '../../../../../assets/cid01.png'
+import ContentAddressingImg from '../../../../../assets/cid02.png'
 
 const sha1 = require('js-sha1');
 const sha256 = require('js-sha256');
@@ -64,9 +64,9 @@ export default function Cid() {
         setValues({ ...values, 'cid': cid[0].hash })
     }; */
 
-    const handleFileUpload = async event => {
-        let cid = await ipfs.addToIPFS(event.target.files[0])
-        setValues({...values, 'cid': cid[0].hash})
+    const handleFileUpload = event => {
+        console.log(event.target.files[0])
+        uploadToIPFS(event.target.files[0])
     }
 
     useEffect(() => {
@@ -165,7 +165,7 @@ export default function Cid() {
 
             <Grid key={0} xs={12} item>
                 <Typography variant="body1">
-                    If you recall, these are the same problems that we mentioned in the <NavLink className={classes.link} to="/ipfs/concepts/why_ipfs">Why do we need IPFS</NavLink> section.
+                    If you recall, these are the same problems that we mentioned in the <NavLink className={classes.link} to="/ipfs/learn/why_ipfs">Why do we need IPFS</NavLink> section.
                 </Typography>
             </Grid>
 
@@ -274,17 +274,17 @@ export default function Cid() {
 
             <Grid key={0} xs={12} item>
                 <Typography variant="body1">
-                    In the next section, we will study about <NavLink className={classes.link} to="/ipfs/concepts/ipns">InterPlanetary Naming System</NavLink>.
+                    In the next section, we will study about <NavLink className={classes.link} to="/ipfs/learn/ipns">InterPlanetary Naming System</NavLink>.
                 </Typography>
             </Grid>
 
             <Grid key={0} xs={12} justify="center" align="center" item>
-                <NavLink className={classes.link} to="/ipfs/concepts/hashes">
+                <NavLink className={classes.link} to="/ipfs/learn/hashes">
                     <Button variant="contained" color="primary" className={classes.button}>
                         Previous
                 </Button>
                 </NavLink>
-                <NavLink className={classes.link} to="/ipfs/concepts/ipns">
+                <NavLink className={classes.link} to="/ipfs/learn/ipns">
                     <Button variant="contained" color="primary" className={classes.button}>
                         Next
                 </Button>

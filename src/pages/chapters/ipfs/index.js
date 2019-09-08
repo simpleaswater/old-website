@@ -2,10 +2,11 @@ import React, { Fragment } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 
 import Overview from './overview'
+import Learn from './learn'
 import Introduction from './introduction'
 import Concepts from './concepts'
 import Tutorials from './tutorials'
-import Starterkit from './starterkit'
+import GettingStarted from './getting_started'
 
 
 const useStyles = makeStyles({
@@ -20,17 +21,18 @@ export default function Index(props) {
 
     const sections = {
         "overview": <Overview {...props} />,
+        "learn": <Learn {...props} />,
         "introduction": <Introduction {...props} />,
         "concepts": <Concepts {...props} />,
         "tutorials": <Tutorials {...props} />,
-        "starter_kits": <Starterkit {...props} />
+        "getting_started": <GettingStarted {...props} />
     }
 
     const { match } = props;
 
     return (
         <div className={classes.root}>
-            {sections[match.params.section]}
+            {sections[match.params.section || "overview"]}
         </div>
     )
 }

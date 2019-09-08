@@ -2,6 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
+import Button from '@material-ui/core/Button'
 import { NavLink } from 'react-router-dom'
 
 import Subscribe from '../../../../components/LayoutComponents/Subscribe'
@@ -25,21 +26,22 @@ const useStyles = makeStyles({
     }
 })
 
-export default function Bitswap() {
+export default function Ipld() {
     const classes = useStyles();
     return (
         <Grid container spacing={3}>
             <Grid key={0} xs={12} item>
-                <Typography variant="h4"><b>Bitswap</b></Typography>
+                <Typography variant="h4"><b>Inter-Planetary Lined Data</b></Typography>
             </Grid>
 
             <Grid key={0} xs={12} align="center" item>
-                <Typography variant="h5" className={classes.comingsoon}><b>Coming Soon...</b></Typography>
+                <Typography variant="h5" className={classes.comingsoon}><b>Coming Soon</b></Typography>
             </Grid>
 
             <Grid key={0} xs={12} item>
                 <Subscribe placeholderText="Get access to this when it's here" buttonText="" />
             </Grid>
+
         </Grid>
     )
 }

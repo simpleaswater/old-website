@@ -44,10 +44,10 @@ export default function Main() {
     });
 
     const iconList = {
-        "Twitter": <i class="fa fa-twitter" aria-hidden="true"></i>,
-        "LinkedIn": <i class="fa fa-linkedin" aria-hidden="true"></i>,
-        "Facebook": <i class="fa fa-facebook" aria-hidden="true"></i>,
-        "Email": <i class="fa fa-envelope" aria-hidden="true"></i>
+        "Twitter": <i className="fa fa-twitter" aria-hidden="true"></i>,
+        /* "LinkedIn": <i className="fa fa-linkedin" aria-hidden="true"></i>,
+        "Facebook": <i className="fa fa-facebook" aria-hidden="true"></i>,
+        "Email": <i className="fa fa-envelope" aria-hidden="true"></i> */
     }
 
     const fullList = side => (
@@ -58,13 +58,19 @@ export default function Main() {
             onKeyDown={toggleDrawer(side, false)}
         >
             <List>
-                {['Twitter', 'LinkedIn', 'Facebook', 'Email'].map((text, index) => (
-                    <ListItem button key={index}>
-                        <ListItemIcon>{
-                            iconList[text]
-                        }</ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
+                {['Twitter'/* , 'LinkedIn', 'Facebook', 'Email' */].map((text, index) => (
+                    <a class="twitter-share-button"
+                        target="_blank"
+                        style={{ textDecoration: 'none' }}
+                        href="https://twitter.com/intent/tweet?text=Human-friendly%20Docs%20for%20IPFS%3A%20https%3A//simpleaswater.com/ipfs&via=simpleaswater_"
+                        data-size="large">
+                        <ListItem button key={index}>
+                            <ListItemIcon>{
+                                iconList[text]
+                            }</ListItemIcon>
+                            <ListItemText primary={text} />
+                        </ListItem>
+                    </a>
                 ))}
             </List>
         </div>
@@ -73,10 +79,10 @@ export default function Main() {
 
     //toggle Drawer
     const toggleDrawer = (side, open) => event => {
+        console.log("XXXXXXXXXXXXXXXxx")
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return;
         }
-
         setState({ ...state, [side]: open });
     };
 
@@ -136,7 +142,7 @@ export default function Main() {
                         </Fragment>
                     }
                     toggleHeart={() => toggleHeart(`${rowIndex}${cardIndex}`)}
-                    toggleDrawer={() => toggleDrawer('bottom', true)}
+                    toggleDrawer={toggleDrawer('bottom', true)}
                     favoriteIcon={
                         state.heartClicked[`${rowIndex}${cardIndex}`] ?
                             <FavoriteIcon color="secondary" />

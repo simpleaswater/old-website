@@ -4,6 +4,8 @@ import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import { NavLink } from 'react-router-dom'
 
+import Subscribe from '../../../../components/LayoutComponents/Subscribe'
+
 const useStyles = makeStyles({
     code: {
         backgroundColor: '#F2F3F4',
@@ -16,6 +18,10 @@ const useStyles = makeStyles({
     note: {
         borderLeft: "6px solid #3f51b5",
         backgroundColor: "#ddffff"
+    },
+    comingsoon: {
+        color: "#D5DBDB",
+        marginTop: '40px'
     }
 })
 
@@ -24,7 +30,15 @@ export default function Dht() {
     return (
         <Grid container spacing={3}>
             <Grid key={0} xs={12} item>
-                <Typography variant="h4"><b>DHT</b></Typography>
+                <Typography variant="h4"><b>Distributed Hash Tables (DHTs)</b></Typography>
+            </Grid>
+
+            <Grid key={0} xs={12} align="center" item>
+                <Typography variant="h5" className={classes.comingsoon}><b>Coming Soon...</b></Typography>
+            </Grid>
+
+            <Grid key={0} xs={12} item>
+                <Subscribe placeholderText="Get access to this when it's here" buttonText="" />
             </Grid>
         </Grid>
     )

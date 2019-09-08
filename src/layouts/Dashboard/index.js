@@ -160,13 +160,20 @@ export default function Dashboard(props) {
       if (index > 0) {
         if (path != "") {
           jumpPath += path + "/"
-          return <Fragment key={index}>{" > "} <NavLink onClick={() => { this.forceUpdate()}} className={classes.link} to={jumpPath}>{capitalizeFirstLetter(path)}</NavLink></Fragment>
+          return <Fragment key={index}>{" > "} <NavLink onClick={() => { this.forceUpdate() }} className={classes.link} to={jumpPath}>{capitalizeFirstLetter(path)}</NavLink></Fragment>
         }
         return
       }
       return <NavLink onClick={() => { this.forceUpdate() }} key={index} to="/" className={classes.link}>Home</NavLink>
     })
   }
+
+  let navbar
+  const updateNavBar = () => {
+    navbar = getNavPath()
+  }
+
+  window.updateNavBar = updateNavBar
 
   return (
     <div className={classes.root}>
@@ -200,7 +207,9 @@ export default function Dashboard(props) {
         open={open}
       >
         <div className={classes.toolbarIcon}>
-          <img src={`/assets/${context.project}.png`} height="50px" />
+          <NavLink className={classes.link} to={`/${context.project}`}>
+            <img src={`/assets/${context.project}.png`} height="50px" />
+          </NavLink>
           <IconButton onClick={handleDrawerClose}>
             <ChevronLeftIcon />
           </IconButton>

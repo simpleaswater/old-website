@@ -9,6 +9,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Input from '@material-ui/core/Input';
 import InputAdornment from '@material-ui/core/InputAdornment';
 
+import axios from 'axios'
 
 const useStyles = makeStyles(theme => ({
     textField: {
@@ -24,12 +25,30 @@ const useStyles = makeStyles(theme => ({
 
 export default function Subscribe(props) {
 
-    const { placeholderText } = props
+    var { placeholderText, buttonText } = props
 
     const classes = useStyles();
     const [values, setValues] = React.useState({
         email: ''
     });
+
+    let buttonColorClass = "secondary"
+
+    const sendEmail = () => {
+        axios({
+            method: 'get',
+            url: `https://simpleaswater.com:8081/email?to=${values.email}`,
+        })
+            .then(response => {
+                console.log(response.data)
+                buttonText = "Check your Mail :)"
+            })
+            .catch(err => {
+                console.log(err)
+                buttonText = "Please Try Again"
+            })
+
+    }
 
     const handleChange = name => event => {
         setValues({ ...values, [name]: event.target.value });
@@ -52,7 +71,7 @@ export default function Subscribe(props) {
                 </center>
             </Grid>
             <Grid key={1} item>
-                <Button variant="contained" color="secondary" className={classes.button}>Give me free Access</Button>
+                <Button variant="contained" color={buttonColorClass} onClick={sendEmail} className={classes.button}>{buttonText || 'Give me free Access'}</Button>
             </Grid>
         </Grid>
     )

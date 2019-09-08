@@ -6,7 +6,7 @@ import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import { NavLink } from 'react-router-dom'
 
-import HashingImg from '../../../../assets/hashing.png'
+import HashingImg from '../../../../../assets/hashing.png'
 
 const sha1 = require('js-sha1');
 const sha256 = require('js-sha256');
@@ -176,7 +176,7 @@ export default function Hashes() {
 
             {/* <Grid key={0} xs={12} item>
                 <Typography variant="body1">
-                    Hashes can be represented in different bases (<span className={classes.code}>base2</span>, <span className={classes.code}>base16</span>, <span className={classes.code}>base32</span>, etc.). In fact, IPFS makes use of that as part of its <NavLink className={classes.link} to="/ipfs/concepts/cid">Content Identifiers</NavLink> which we will see in the next section.
+                    Hashes can be represented in different bases (<span className={classes.code}>base2</span>, <span className={classes.code}>base16</span>, <span className={classes.code}>base32</span>, etc.). In fact, IPFS makes use of that as part of its <NavLink className={classes.link} to="/ipfs/learn/cid">Content Identifiers</NavLink> which we will see in the next section.
                 </Typography>
             </Grid> */}
 
@@ -304,17 +304,17 @@ export default function Hashes() {
 
             <Grid key={0} xs={12} item>
                 <Typography variant="body1">
-                    Now as we have understood what is a hash and a hash function, let's move to <NavLink className={classes.link} to="/ipfs/concepts/cid"> content addressing and content identifiers(CIDs)</NavLink>.
+                    Now as we have understood what is a hash and a hash function, let's move to <NavLink className={classes.link} to="/ipfs/learn/cid"> content addressing and content identifiers(CIDs)</NavLink>.
                     </Typography>
             </Grid>
 
             <Grid key={0} xs={12} justify="center" align="center" item>
-                <NavLink className={classes.link} to="/ipfs/introduction/why_ipfs">
+                <NavLink className={classes.link} to="/ipfs/learn/how_ipfs_works">
                     <Button variant="contained" color="primary" className={classes.button}>
                         Previous
                 </Button>
                 </NavLink>
-                <NavLink className={classes.link} to="/ipfs/concepts/cid">
+                <NavLink className={classes.link} to="/ipfs/learn/cid">
                     <Button variant="contained" color="primary" className={classes.button}>
                         Next
                 </Button>

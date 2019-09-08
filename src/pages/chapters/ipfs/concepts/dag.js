@@ -25,12 +25,12 @@ const useStyles = makeStyles({
     }
 })
 
-export default function Bitswap() {
+export default function Dag() {
     const classes = useStyles();
     return (
         <Grid container spacing={3}>
             <Grid key={0} xs={12} item>
-                <Typography variant="h4"><b>Bitswap</b></Typography>
+                <Typography variant="h4"><b>Directed acyclic graphs (DAGs)</b></Typography>
             </Grid>
 
             <Grid key={0} xs={12} align="center" item>

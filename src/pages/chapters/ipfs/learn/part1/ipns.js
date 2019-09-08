@@ -8,7 +8,9 @@ import IconButton from '@material-ui/core/IconButton'
 import CloudUploadIcon from '@material-ui/icons/CloudUpload'
 import { NavLink } from 'react-router-dom'
 
-import ipfs from '../../../../utils/ipfs'
+import ipfs from '../../../../../utils/ipfs'
+import { Buffer } from 'multihashing-async';
+
 
 
 const sha1 = require('js-sha1');
@@ -73,7 +75,7 @@ export default function Cid() {
 
             <Grid key={0} xs={12} item>
                 <Typography variant="body1">
-                    In the <NavLink className={classes.link} to="/ipfs/concepts/ipns">last section</NavLink>, we learned how we can create a more <b>resilient</b>, <b>censorship-resistant</b> and <b>faster internet</b> using <b>content addressing</b>.
+                    In the <NavLink className={classes.link} to="/ipfs/learn/ipns">last section</NavLink>, we learned how we can create a more <b>resilient</b>, <b>censorship-resistant</b> and <b>faster internet</b> using <b>content addressing</b>.
                 </Typography>
             </Grid>
 
@@ -259,12 +261,12 @@ export default function Cid() {
             </Grid>
 
             <Grid key={0} xs={12} justify="center" align="center" item>
-                <NavLink className={classes.link} to="/ipfs/concepts/cid">
+                <NavLink className={classes.link} to="/ipfs/learn/cid">
                     <Button variant="contained" color="primary" className={classes.button}>
                         Previous
                 </Button>
                 </NavLink>
-                <NavLink className={classes.link} to="/ipfs/concepts/pinning">
+                <NavLink className={classes.link} to="/ipfs/learn/pinning">
                     <Button variant="contained" color="primary" className={classes.button}>
                         Next
                 </Button>

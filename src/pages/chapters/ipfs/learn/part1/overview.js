@@ -2,19 +2,15 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
 
 import { NavLink } from 'react-router-dom'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
     link: {
         color: "#0000EE",
         textDecoration: 'none'
     },
-    button: {
-        //margin: theme.spacing(2),
-    },
-}))
+})
 
 export default function Index() {
     const classes = useStyles();
@@ -49,7 +45,7 @@ export default function Index() {
                         <ul>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/introduction/why_ipfs">Why IPFS?</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/why_ipfs">Why IPFS?</NavLink>
                                 </Typography>
                             </li>
                         </ul>
@@ -61,22 +57,22 @@ export default function Index() {
                         <ul>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/hashes">Hashes and Hash Functions</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/hashes">Hashes and Hash Functions</NavLink>
                                 </Typography>
                             </li>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/cid">Content addressing and Content Indentifier</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/cid">Content addressing and Content Indentifier</NavLink>
                                 </Typography>
                             </li>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/ipns">InterPlanetary Naming System (IPNS)</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/ipns">InterPlanetary Naming System (IPNS)</NavLink>
                                 </Typography>
                             </li>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/pinning">Pinning</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/pinning">Pinning</NavLink>
                                 </Typography>
                             </li>
                         </ul>
@@ -89,17 +85,12 @@ export default function Index() {
                         <ul>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/ipld">InterPlanetary Linked Data</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/hashes">InterPlanetary Linked Data</NavLink>
                                 </Typography>
                             </li>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/dags">Directed Acyclic Graphs (DAGs)</NavLink>
-                                </Typography>
-                            </li>
-                            <li>
-                                <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/merkle-dag">Merkle-DAGs</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/cid">Directed Acyclic Graphs (DAGs)</NavLink>
                                 </Typography>
                             </li>
                         </ul>
@@ -112,17 +103,17 @@ export default function Index() {
                         <ul>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/libp2p">Libp2p</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/hashes">Libp2p</NavLink>
                                 </Typography>
                             </li>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/dht">Distributed Hash Table (DHT)</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/cid">Distributed Hash Table (DHT)</NavLink>
                                 </Typography>
                             </li>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/bitswap">Bitswap</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/cid">Bitswap</NavLink>
                                 </Typography>
                             </li>
                         </ul>
@@ -135,17 +126,17 @@ export default function Index() {
                         <ul>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/mfs">Mutable File System (MFS)</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/mfs">Mutable File System (MFS)</NavLink>
                                 </Typography>
                             </li>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/unixfs">UnixFS</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/unixfs">UnixFS</NavLink>
                                 </Typography>
                             </li>
                             <li>
                                 <Typography variant='body1'>
-                                    <NavLink className={classes.link} to="/ipfs/concepts/dnslink">DNSLink</NavLink>
+                                    <NavLink className={classes.link} to="/ipfs/learn/dnslink">DNSLink</NavLink>
                                 </Typography>
                             </li>
                         </ul>
@@ -172,22 +163,22 @@ export default function Index() {
                 <ul>
                     <li>
                         <Typography variant='body1'>
-                            <NavLink className={classes.link} to="/ipfs/getting_started/install">Install IPFS</NavLink>
+                            <NavLink className={classes.link} to="/ipfs/install">Install IPFS</NavLink>
                         </Typography>
                     </li>
                     <li>
                         <Typography variant='body1'>
-                            <NavLink className={classes.link} to="/ipfs/getting_started/using_ipfs">Starting using IPFS and connect with other peers</NavLink>
+                            <NavLink className={classes.link} to="/ipfs/start">Starting IPFS peer and connect with other peers</NavLink>
                         </Typography>
                     </li>
                     <li>
                         <Typography variant='body1'>
-                            <NavLink className={classes.link} to="/ipfs/getting_started/transfer_files">Transferring a file</NavLink>
+                            <NavLink className={classes.link} to="/ipfs/transfer_file">Transfering a file</NavLink>
                         </Typography>
                     </li>
                     <li>
                         <Typography variant='body1'>
-                            <NavLink className={classes.link} to="/ipfs/getting_started/replicate_large_dataset">Replicating Large Datasets</NavLink>
+                            <NavLink className={classes.link} to="/ipfs/replicate_large_datasets">Replicating Large Datasets</NavLink>
                         </Typography>
                     </li>
                 </ul>
@@ -196,7 +187,7 @@ export default function Index() {
             <Grid key={2} xs={12} item>
                 <Typography variant='h5'>
                     <b>
-                        Tutorials
+                        Build using IPFS
                     </b>
                 </Typography>
             </Grid>
@@ -211,47 +202,25 @@ export default function Index() {
                 <ul>
                     <li>
                         <Typography variant='body1'>
-                            <NavLink className={classes.link} to="/ipfs/tutorials/hosting_website_on_ipfs_ipns_dnslink">Hosting a website on IPFS using IPNS and DNSLink</NavLink>
+                            <NavLink className={classes.link} to="/ipfs/tutorials/hosting_website_on_ipfs">Hosting a website on IPFS</NavLink>
                         </Typography>
                     </li>
                     <li>
                         <Typography variant='body1'>
-                            <NavLink className={classes.link} to="/ipfs/tutorials/youtube_on_ipfs">Building Decentralized Youtube on IPFS</NavLink>
+                            <NavLink className={classes.link} to="/ipfs/learn/cid">Building Decentralized Youtube on IPFS</NavLink>
                         </Typography>
                     </li>
                     <li>
                         <Typography variant='body1'>
-                            <NavLink className={classes.link} to="/ipfs/tutorials/online_publishing_using_ipld">Building an Online Publishing Platform on IPLD</NavLink>
+                            <NavLink className={classes.link} to="/ipfs/learn/cid">Building an Online Publishing Platform on IPLD</NavLink>
                         </Typography>
                     </li>
                     <li>
                         <Typography variant='body1'>
-                            <NavLink className={classes.link} to="/ipfs/tutorials/chat_app_libp2p">Building a chat application using Libp2p</NavLink>
+                            <NavLink className={classes.link} to="/ipfs/learn/cid">Building a chat application using Libp2p</NavLink>
                         </Typography>
                     </li>
                 </ul>
-            </Grid>
-
-            <Grid key={2} xs={12} item>
-                <Typography variant='h5'>
-                    <b>
-                        App Store
-                    </b>
-                </Typography>
-            </Grid>
-
-            <Grid key={2} xs={12} item>
-                <Typography variant='body1'>
-                    Explore apps, tools and projects built by the IPFS Community.
-                </Typography>
-            </Grid>
-
-            <Grid key={2} xs={12} item>
-                <a className={classes.link} target="_blank" href="https://awesome.ipfs.io/apps/">
-                    <Button variant="contained" color="primary" className={classes.button}>
-                        Explore Apps >
-                    </Button>
-                </a>
             </Grid>
         </Grid>
     )
