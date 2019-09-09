@@ -2,12 +2,10 @@ import React, { Component, Fragment } from 'react'
 
 export default class BlankLayout extends Component {
     render() {
-        console.log(this.props)
-
         return (
-            <Fragment>
+            <div style={{ width: window.innerWidth, height: window.innerHeight }}>
                 {this.props.children}
-            </Fragment>
+            </div>
         )
     }
 }
